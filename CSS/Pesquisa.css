@@ -1,0 +1,208 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    margin: -8px;
+    display: flex;
+    width: initial;
+    height: 50px;
+    background-color: #000000;
+    
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    
+}
+
+.content{
+    display: flex;
+}
+
+.detalhes_unidade{
+    padding-top: 40px;
+    display: flex;
+    width: initial;
+    justify-content: auto;
+}
+
+.btn_contato{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    width: max-content;
+    height: max-content;
+    text-align: right;
+    margin-top: 60px;
+    cursor: pointer;
+    background-color: #678058;
+    border-radius: 10px;
+    border: 0px;
+    outline: 0;
+    color: #ffffff;
+    align-items: center;
+    
+}
+
+.img_btn{
+    margin-left: 10px;
+}
+
+.texto_detalhes{
+
+    
+    flex-direction: column;
+    justify-items: auto;
+    padding-left: 60px;
+    line-height: 20px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    
+}
+
+.header_bottom{
+    margin: -8px;
+    margin-top: 8px;
+    width: initial;
+    height: 10px;
+    background-color: #678058;
+}
+
+.sidebar{
+    width: 100px;
+    height: 1000px;
+    background-color: #678058;
+    
+}
+
+.menu_header{
+    display: flex;
+    align-items: center;
+}
+
+.login_header{
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+.lupa_header{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.login_pesquisa_header{
+    display: flex;
+    align-items: center;
+    
+}
+
+.anuncio_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+
+.linha_anuncio{
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.posicao_img_P{
+    width: 255px;
+    height: 230px;
+    padding-left: 80px;
+    padding-right: 35px;
+    padding-top: 30px;
+}
+
+.bloco_imagem_P{
+    margin-left: 20px;
+    width: 360px;
+    height: 290px;
+    padding-right: 50px;
+    background-color: #678058;
+    border-radius: 10px;
+    
+}
+
+.posicao_img{
+    padding: 10px 15px;
+}
+
+.anuncios_unidade{
+    display: block;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    color: black;
+}
+
+.bloco_imagem{
+    width: 190px;
+    height: 170px;
+    background-color: #678058;
+    border-radius: 10px;
+    
+}
+
+.anuncios_fileira{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: initial;
+    background-color: white;
+}
+
+
+#reee{
+    margin: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pesquisa_input{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    background-color: #678058;
+}
+
+.txt_input{
+    padding-left: 10px;
+    margin: 20px;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    
+    outline: 0;
+    border: 0px;
+}
+
+.pesquisa_flex{
+    display: flex;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.img_pesquisa{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 20px;
+    cursor: pointer;
+}

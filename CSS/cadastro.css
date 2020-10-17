@@ -1,0 +1,21 @@
+
+body{
+    align-items: center;
+}
+
+
+.content{
+    align-items: center;
+    
+    background-color:blue;
+    width: 200px;
+    height: 200px;
+}
+
+.card{
+
+    background-color: black;
+    width: 100px;
+    height: 100px;
+
+}

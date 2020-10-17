@@ -1,0 +1,115 @@
+.header{
+    display: flex;
+    width: initial;
+    height: 50px;
+    background-color: #000000;
+    
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    
+}
+
+.content{
+    display: flex;
+}
+
+.header_bottom{
+    width: initial;
+    height: 10px;
+    background-color: #678058;
+}
+
+.sidebar{
+    width: 100px;
+    height: 1000px;
+    background-color: #678058;
+    
+}
+
+.menu_header{
+    display: flex;
+    align-items: center;
+}
+
+.login_header{
+    margin-right: 20px;
+}
+
+.lupa_header{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.login_pesquisa_header{
+    display: flex;
+    align-items: center;
+    
+}
+
+.anuncio_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.linha_anuncio{
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.anuncios_fileira{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: initial;
+    background-color: white;
+}
+
+.anuncios_unidade{
+    margin-top: 30px;
+    display: block;
+    padding-top: 20px;
+    padding-right: 10%;
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    color: black;
+}
+
+.bloco_imagem{
+    width: 210px;
+    height: 180px;
+    background-color: #678058;
+    border-radius: 10px;
+    
+}
+
+.bloco_nome_prod{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.posicao_img{
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+.textbox{
+    width: 100%;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 20px;
+    background-origin: border-box;
+    transition: .3s;
+    background-color: #678058;
+}
