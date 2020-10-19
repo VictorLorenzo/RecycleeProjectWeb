@@ -3,6 +3,157 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.content{
+    flex-direction: column;
+}
+
+.content#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-top: 80px;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0);
+    background: #FBFBFB;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-top: 80px;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 100.);
+    background: #FBFBFB;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+#cadastro{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 30.);
+    background: #FBFBFB;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.campologin{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    margin: 0px 50px;
+    background-color: #D4D9CF;
+    border-radius: 10px;
+}
+
+#email_field{
+    margin-left: 50px;
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#password_field{
+    margin-left: 50px;
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#btnLogin{
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 150px;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    background-color: #55B716;
+    cursor: pointer;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    color: #ffffff;
+}
+
+.cadastrolink{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-top:20px;
+}
+
+#popup.active {
+    top: 40%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#cadastro.active {
+    top: 40%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.closex{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.modalheader{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    justify-content:space-between;
+    
+}
+
+.btnclose{
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+}
+
 .header{
     margin: -8px;
     display: flex;
@@ -28,7 +179,7 @@ body{
     margin-top: 8px;
     width: initial;
     height: 10px;
-    background-color: #678058;
+    background-color: #3568B5;
 }
 
 .sidebar{
@@ -46,6 +197,7 @@ body{
 .login_header{
     margin-right: 20px;
     padding-left: 10px;
+    color: #ffffff;
 }
 
 .lupa_header{
@@ -99,7 +251,7 @@ body{
 .bloco_imagem{
     width: 210px;
     height: 180px;
-    background-color: #678058;
+    background-color: #55B716;
     border-radius: 10px;
     
 }

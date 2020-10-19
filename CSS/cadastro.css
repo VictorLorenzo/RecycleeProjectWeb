@@ -1,21 +1,25 @@
-
-body{
+#card_cadastro{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-
-.content{
-    align-items: center;
+    margin: 30px 400px;
+    width: 600px;
+    height: 550px;
     
-    background-color:blue;
-    width: 200px;
-    height: 200px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 100.);
+    background: #FBFBFB;
+    background-color: #F8F8F8;
+    border-radius:10px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0);
 }
 
-.card{
+#btnCadastrar{
+    margin-top: 20px;
+}
 
-    background-color: black;
-    width: 100px;
-    height: 100px;
-
+.closex_cadastro{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+    margin-top: 20px;
 }

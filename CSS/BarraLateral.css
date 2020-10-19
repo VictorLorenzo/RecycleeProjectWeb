@@ -9,7 +9,7 @@
     display: none;
 }
 .barra{
-    background-color: #678058;
+    background-color: #3568B5;
     height: initial;
     width: 195px;
     position: absolute;
@@ -28,7 +28,7 @@ nav a{
 }
 
 .link{
-    background-color: #678058;
+    background-color: #3568B5;
     padding: 20px;
     font-family: Arial;
     font-size: 12pt;

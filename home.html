@@ -12,7 +12,6 @@
 
     
     <div class="header">
-        
         <div class="login_pesquisa_header"> 
             <input type="checkbox" id="check">
     <label id="icone" for="check"><img src="/Recycle_WEB/Assets/view_headline.jpg"></label>
@@ -20,7 +19,7 @@
     <div class="barra">
         <nav>
             <a href=""><div class="link"> Login</div></a>
-            <a href=""><div class="link"> Cadastre-se</div></a>
+            <a href=""><div class="link"> Baixar o App</div></a>
             <a href="home.html"><div class="link"> Inicio</div></a>
             <a href="Pesquisa.html"><div class="link"> Anúncios</div></a>
             <a href="Detalhes.html"><div class="link"> Meus Anuncios</div></a>
@@ -36,13 +35,14 @@
         
         <div class="login_pesquisa_header"> 
             <img class="lupa_header" src="/Recycle_WEB/Assets/iconlupa 3.png" alt="">
-            <p class="login_header" href="">| Login</p>
+            <a class="login_header" style="text-decoration:none;" onclick="toggle()" href="#">| Login</a>
         </div>
+
     </div>
 
-    <div class="header_bottom">
-    </div>
+    <div class="header_bottom"></div>
 
+<div class="content" id="blur">
     <div class="anuncio_bar">
         <h1>Anúncios</h1>
             <div class="anuncio_icons">
@@ -208,6 +208,49 @@
             <p><b>Anunciante</b></p>
         </div>
     </div>
+</div>
+
+<div id="popup">
+    <div class="closex"> <a href="#Close" style="text-decoration: none;" onclick="toggle()" href="#" style="text-decoration-color: red;">X</a></div>
+    <div class="modalheader" >
+        <h2 style="text-align: center;"> <b>Login</b> </h2>         
+    </div>
+    
+    <div id="campologin" class="campologin">
+        <h3 style="margin: 10px 50px;">Email</h3>
+            <div class="input-group">
+                <input type="email" placeholder="Digite seu email aqui" id="email_field">
+            </div>
+        <h3 style="margin: 10px 50px; ">Senha</h3>
+            <div class = "input-group">
+                <input type="password" placeholder="Digite sua senha aqui" id="password_field" >
+            </div>
+        
+        
+        
+        <div class="cadastrolink">
+            <a href="" style="text-decoration: none;"  >Esqueceu a senha?</a>
+            <a href="Cadastro.html" style="text-decoration: none;"  >Cadastre-se</a>
+        </div>
+        
+        <button id="btnLogin" onclick="login()"> Login </button>
+    </div>
+</div>
+
+    
+</div>
+
+<script type="text/javascript">
+
+    function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+    }
+
+</script>
+
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
@@ -233,6 +276,7 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
     </script>
+    <script src="index.js"></script>
 
 </body>
 

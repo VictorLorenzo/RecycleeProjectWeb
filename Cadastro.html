@@ -3,14 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recycle Home</title>
+    <link rel="stylesheet" href="/CSS/home.css">
+    <link rel="stylesheet" href="/CSS/BarraLateral.css">
     <link rel="stylesheet" href="CSS/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div>
-    <div class="content">
-        <div class="card"></div>
+
+    <div class="header">
+        <div class="login_pesquisa_header"> 
+            <input type="checkbox" id="check">
+    <label id="icone" for="check"><img src="/Recycle_WEB/Assets/view_headline.jpg"></label>
+
+    <div class="barra">
+        <nav>
+            <a href=""><div class="link"> Login</div></a>
+            <a href=""><div class="link"> Baixar o App</div></a>
+            <a href="home.html"><div class="link"> Inicio</div></a>
+            <a href="Pesquisa.html"><div class="link"> Anúncios</div></a>
+            <a href="Detalhes.html"><div class="link"> Meus Anuncios</div></a>
+            <a href="Localidades.html"><div class="link"> Localidades</div></a>   
+        </nav>
+
     </div>
+            <p class="login_header" href="" id="reee"> Recycle-e</p>
+            
+        </div>
+        
+        <div class="login_pesquisa_header"> 
+            <img class="lupa_header" src="/Recycle_WEB/Assets/iconlupa 3.png" alt="">
+            <a class="login_header" style="text-decoration:none;" onclick="toggle()" href="#">| Login</a>
+        </div>
+
     </div>
+
+    <div style="background-color: #3568B5;" class="header_bottom"></div>
+
+<div class="content" id="blur">
+    <div id="card_cadastro">
+        <div class="modalheader" >
+            <h2 style="display: flex; flex-direction: column; align-items: center;"  >Cadastro</h2>
+            <h3 style="margin: 10px 50px;">Nome</h3>         
+                <div class="input-group">
+                    <input type="text" placeholder="Digite seu nome aqui" id="email_field">
+                </div>
+            <h3 style="margin: 10px 50px;">Email</h3>
+                <div class="input-group">
+                    <input type="email" placeholder="Digite seu email aqui" id="email_field">
+                </div>
+            <h3 style="margin: 10px 50px;">Senha</h3>
+                <div class="input-group">
+                    <input type="password" placeholder="Digite sua senha aqui" id="email_field">
+                </div>
+            <h3 style="margin: 10px 50px;">Confirmar Senha</h3>
+                <div class="input-group">
+                    <input type="password" placeholder="Confirme sua senha aqui" id="email_field">
+                </div>
+                <button id="btnLogin"> Cadastrar</button>
+        </div>
+    </div>
+</div>
+
+<div id="popup">
+    <div class="closex"> <a href="#Close" style="text-decoration: none;" onclick="toggle()" href="#" style="text-decoration-color: red;">X</a></div>
+    <div class="modalheader" >
+        <h2>Login</h2>         
+    </div>
+    
+    <div id="campologin" class="campologin">
+        <h3 style="margin: 10px 50px;">Email</h3>
+            <div class="input-group">
+                <input type="email" placeholder="Digite seu email aqui" id="email_field">
+            </div>
+        <h3 style="margin: 10px 50px; ">Senha</h3>
+            <div class = "input-group">
+                <input type="password" placeholder="Digite sua senha aqui" id="password_field" >
+            </div>
+        
+        
+        
+        <div class="cadastrolink">
+            <a href="" style="text-decoration: none;"  >Esqueceu a senha?</a>
+            <a href="Cadastro.html" style="text-decoration: none;"  >Cadastre-se</a>
+        </div>
+        
+        <button id="btnLogin" onclick="login()"> Login </button>
+    </div>
+</div>
+
+    
+</div>
+
+<script type="text/javascript">
+
+    function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+    }
+
+</script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCtp8_spBht9KDsAhlR1YmK1ZPNhSQhCHI",
+        authDomain: "recycleweb-8e40e.firebaseapp.com",
+        databaseURL: "https://recycleweb-8e40e.firebaseio.com",
+        projectId: "recycleweb-8e40e",
+        storageBucket: "recycleweb-8e40e.appspot.com",
+        messagingSenderId: "641953456205",
+        appId: "1:641953456205:web:043c932fb2b52a6923bc04",
+        measurementId: "G-Q1NVBEH2ZX"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    <script src="index.js"></script>
+
 </body>
+
 </html>

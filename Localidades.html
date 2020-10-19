@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localidades</title>
+    <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="/CSS/Detalhes_localidades.css">
     <link rel="stylesheet" href="/CSS/BarraLateral.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
     <div class="barra">
         <nav>
             <a href=""><div class="link"> Login</div></a>
-            <a href=""><div class="link"> Cadastre-se</div></a>
+            <a href=""><div class="link"> Baixar o App</div></a>
             <a href="home.html"><div class="link"> Inicio</div></a>
             <a href="Pesquisa.html"><div class="link"> Anúncios</div></a>
             <a href="Detalhes.html"><div class="link"> Meus Anuncios</div></a>
@@ -36,14 +37,15 @@
         
         <div class="login_pesquisa_header"> 
             <img class="lupa_header" src="/Recycle_WEB/Assets/iconlupa 3.png" alt="">
-            <p class="login_header" href="">| Login</p>
+            <a class="login_header" style="text-decoration:none;" onclick="toggle()" href="#">| Login</a>
         </div>
 
 
     </div>
 
-    <div class="header_bottom">
-    </div>
+    <div style="background-color: #3568B5;" class="header_bottom"></div>
+
+<div class="content" id="blur">
 
     <div class="anuncio_bar">
         <h1>Localidades</h1>        
@@ -53,7 +55,9 @@
     
         <div class="detalhes_unidade">
             <div class="bloco_imagem_localidadesP">
-                <img class="posicao_img_localidadesP" src="/Recycle_WEB/Assets/mapdescarte 1.png" alt="">
+                <a href="mapa.html">
+                    <img class="posicao_img_localidadesP" src="/Recycle_WEB/Assets/mapdescarte 1.png" alt="">
+                </a>
             </div>
 
             <div class="texto_detalhes">
@@ -63,7 +67,7 @@
                 <h3>Endereço:</h3>
                 <h4>
                     R. Carbonita, 01 - Parque Dez de Novembro, Manaus - AM, 69058-113</h4>
-                <button class="btn_contato">Entrar em contato  <img class="img_btn" src="Recycle_WEB/Assets/iconmsg 2.png" alt=""></button>
+                <button style="background-color: #55B716;" class="btn_contato">Entrar em contato  <img class="img_btn" src="Recycle_WEB/Assets/iconmsg 2.png" alt=""></button>
             </div>
 
             
@@ -141,8 +145,39 @@
         </div>
 
     </div>
+</div>
 
+<div id="popup">
+    <div class="closex"> <a href="#Close" style="text-decoration: none;" onclick="toggle()" href="#" style="text-decoration-color: red;">X</a></div>
+    <div class="modalheader" >
+        <h2 style="text-align: center">Login</h2>         
+    </div>
     
+    <div id="campologin" class="campologin">
+        <h3 style="margin: 10px 50px;">Email</h3>
+            <div class="input-group">
+                <input type="email" placeholder="Digite seu email aqui" id="email_field">
+            </div>
+        <h3 style="margin: 10px 50px; ">Senha</h3>
+            <div class = "input-group">
+                <input type="password" placeholder="Digite sua senha aqui" id="password_field" >
+            </div>
+            <div class="cadastrolink">
+                <a href="" style="text-decoration: none;"  >Esqueceu a senha?</a>
+                <a href="Cadastro.html" style="text-decoration: none;"  >Cadastre-se</a>
+            </div>
+        <button id="btnLogin" onclick="login()"> Login </button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
 
 </body>
 </html>

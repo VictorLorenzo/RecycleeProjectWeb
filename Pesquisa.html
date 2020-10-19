@@ -18,7 +18,7 @@
     <div class="barra">
         <nav>
             <a href=""><div class="link"> Login</div></a>
-            <a href=""><div class="link"> Cadastre-se</div></a>
+            <a href=""><div class="link"> Baixar o App</div></a>
             <a href="home.html"><div class="link"> Inicio</div></a>
             <a href="Pesquisa.html"><div class="link"> Anúncios</div></a>
             <a href="Detalhes.html"><div class="link"> Meus Anuncios</div></a>
@@ -32,16 +32,16 @@
            
         <div class="login_pesquisa_header"> 
             <img class="lupa_header" src="/Recycle_WEB/Assets/iconlupa 3.png" alt="">
-            <p class="login_header" href="">| Login</p>
+            <a class="login_header" style="text-decoration:none; color: white;" onclick="toggle()" href="#">| Login</a>
+
         </div>
     </div>
 
-    <div class="header_bottom">
-    </div>
+    <div style="background-color: #3568B5;" class="header_bottom"> </div>
 
     <div class="pesquisa_flex">
-        <div class="pesquisa_input">
-            <input class="txt_input" type="text" placeholder="dasd" ></input>
+        <div style="background-color: #55B716" class="pesquisa_input">
+            <input class="txt_input" type="text" placeholder="O que você procura?" ></input>
         </div>
         <div class="img_pesquisa">
             <img src="Recycle_WEB/Assets/iconlupa2 1.png" alt="">
@@ -192,5 +192,19 @@
         </div>
 
     </div>
+
+    
+
+    <script type="text/javascript">
+
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    
+    </script>
+
 </body>
 </html>
