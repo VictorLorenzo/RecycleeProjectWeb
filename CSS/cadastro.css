@@ -23,3 +23,11 @@
     margin-right: 30px;
     margin-top: 20px;
 }
+.fields{
+    margin-left: 50px;
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+}
